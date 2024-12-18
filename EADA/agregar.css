@@ -1,0 +1,97 @@
+/* ingresantes.css */
+
+/* Estilo general del cuerpo */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fdeef4; /* Rosa pastel claro */
+    color: #5d3a5a; /* Color de texto rosa oscuro */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Título */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #b56576; /* Rosa pastel más oscuro */
+    text-shadow: 1px 1px 2px #fff;
+}
+
+/* Formulario */
+form {
+    background-color: #fff0f5; /* Fondo blanco rosado */
+    border: 2px solid #f7a8b8; /* Borde rosa pastel */
+    border-radius: 10px;
+    padding: 20px 40px;
+    width: 350px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Etiquetas */
+label {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    display: block;
+    color: #91476a; /* Rosa suave */
+}
+
+/* Inputs y select */
+input[type="text"],
+input[type="email"],
+input[type="contraseña"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #f7a8b8;
+    border-radius: 5px;
+    background-color: #fffafa; /* Fondo blanco-rosado */
+    font-size: 1em;
+    color: #5d3a5a;
+}
+
+/* Inputs y select: focus */
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #ffb3c1; /* Resalta el borde al enfocar */
+    box-shadow: 0px 0px 5px #ffb3c1;
+}
+
+/* Botón */
+button {
+    width: 100%;
+    padding: 10px 15px;
+    background-color: #f7a8b8; /* Botón rosa pastel */
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e68b9b; /* Cambio de color al pasar el mouse */
+}
+
+button:active {
+    background-color: #d16d7f; /* Color más oscuro al presionar */
+}
+
+/* Responsivo */
+@media (max-width: 480px) {
+    form {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+}
